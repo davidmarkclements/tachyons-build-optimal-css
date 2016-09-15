@@ -1,6 +1,6 @@
 {
   "name": "tachyons-build-optimal-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transpile Tachyons PostCSS to vanilla CSS. This build process also removes comments, autoprefixes, and has options for minifying the output or repeating class selectors (to play nice with overly specific CSS frameworks).",
   "main": "index.js",
   "directories": {
