@@ -22,8 +22,9 @@ const input = fs.readFileSync('input.css', 'utf8')
 build(input, {
   from: 'input.css',
   to: 'output.css',
-  minify: true,
+  minify: false,
   whitelist: ['w4', 'w2', 'mw4'],
+  stripComments: true
 }).then(result => {
   fs.writeFileSync('output.css', result.css)
 })
@@ -35,9 +36,10 @@ build(input, {
 | ------ | ------- | ----------- | ------ |
 | `from` | `undefined` | The input file name | file name |
 | `to` | `undefined` | The output file name | file name |
-| `minify` | `false` | Minify the output CSS | `true`, `false` |
+| `minify` | `false` | Minify the output CSS, infers stripComments | `true`, `false` |
 | `repeat` | `false` | Whether to repeat classes in selectors | `1..10` |
-| `whitelist` | `{}` | Restrict output CSS to whitelist | tachyons classes |
+| `whitelist` | `[]` | Restrict output CSS to whitelist | tachyons classes |
+| `stripComments` | `false` | strip comments | `true`, `false` |
 
 ## License
 

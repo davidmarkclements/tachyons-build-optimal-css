@@ -29,6 +29,10 @@ module.exports = function tachyonsBuild (css, options) {
     plugins.push(rmComments())
   }
 
+  if (!options.minify && options.stripComments) {
+    plugins.push(rmComments)
+  }
+
   if (options.repeat) {
     let repeatNum = parseInt(options.repeat) || 4
 
