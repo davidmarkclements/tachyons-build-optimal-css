@@ -1,0 +1,40 @@
+{
+  "name": "tachyons-build-optimal-css",
+  "version": "1.0.0",
+  "description": "Transpile Tachyons PostCSS to vanilla CSS. This build process also removes comments, autoprefixes, and has options for minifying the output or repeating class selectors (to play nice with overly specific CSS frameworks).",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.4.1",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.4",
+    "perfectionist": "^2.3.0",
+    "postcss": "^5.2.0",
+    "postcss-class-repeat": "^0.1.0",
+    "postcss-class-whitelist": "^1.0.0",
+    "postcss-conditionals": "^2.0.2",
+    "postcss-css-variables": "^0.5.2",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^8.1.2"
+  },
+  "devDependencies": {
+    "ava": "*"
+  },
+  "scripts": {
+    "test": "ava -v"
+  },
+  "keywords": [],
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmarkclements/tachyons-build-optimal-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidmarkclements/tachyons-build-optimal-css/issues"
+  },
+  "homepage": "https://github.com/davidmarkclements/tachyons-build-optimal-css#readme"
+}

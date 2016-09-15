@@ -1,0 +1,22 @@
+/*
+   BACKGROUND SIZE
+   Base:
+    bg = background-size
+   Modifiers:
+    cv = cover
+    cn = contain
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.bg-cv { background-size: cover; }
+@media screen and (min-width: 30em) {
+ .bg-cv-ns { background-size: cover; }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+ .bg-cv-m { background-size: cover; }
+}
+@media screen and (min-width: 60em) {
+ .bg-cv-l { background-size: cover; }
+}
